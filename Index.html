@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile | Web Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="main-header">
+        <div class="container">
+            <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-img">
+            <div class="header-text">
+                <h1>Stephen Mwangi</h1>
+                <p id="greeting">Welcome to my profile!</p>
+                <p class="tagline">Front-End Developer | UX Enthusiast</p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section id="about" class="card">
+            <h2>About Me</h2>
+            <div class="bio-content">
+                <p>Hello! I'm Stephen, a passionate web developer with 2 years of experience creating responsive and user-friendly websites. I specialize in front-end development but also enjoy working with full-stack projects.</p>
+                <p class="more-bio hidden">When I'm not coding, you can find me hiking in the mountains or experimenting with new recipes in the kitchen. I believe in continuous learning and sharing knowledge with the developer community. My journey in tech started when I built my first website at 18, and I've been hooked ever since!</p>
+                <button id="read-more-btn" class="btn">Read More</button>
+            </div>
+        </section>
+
+        <section id="skills" class="card">
+            <h2>My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Front-End</h3>
+                    <ul>
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>React.js</li>
+                        <li>Vue.js</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Back-End</h3>
+                    <ul>
+                        <li>Node.js</li>
+                        <li>Express</li>
+                        <li>Python</li>
+                        <li>RESTful APIs</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Other</h3>
+                    <ul>
+                        <li>Git & GitHub</li>
+                        <li>Webpack</li>
+                        <li>Figma</li>
+                        <li>Photoshop</li>
+                        <li>Illustrator</li>
+                        <li>AWS Devops</li>
+                        <li>Agile Methodologies</li>
+                    </ul>
+                </div>
+            </div>
+            <button id="skills-btn" class="btn">Show My Top Skill</button>
+        </section>
+
+        <section id="projects" class="card">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <article class="project">
+                    <h3>E-commerce Platform</h3>
+                    <p>A full-stack e-commerce solution built with React, Node.js, and MongoDB.</p>
+                    <ul>
+                        <li>Product filtering and search</li>
+                        <li>User authentication</li>
+                        <li>Payment integration</li>
+                    </ul>
+                </article>
+                <article class="project">
+                    <h3>Recipe Sharing App</h3>
+                    <p>A social platform for food enthusiasts built with Vue.js and Firebase.</p>
+                    <ul>
+                        <li>Recipe rating system</li>
+                        <li>Meal planning features</li>
+                        <li>Image upload functionality</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="card">
+            <h2>Get In Touch</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error-message" id="name-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="email-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn submit-btn">Subscribe to Newsletter</button>
+            </form>
+            <div id="form-success" class="hidden">
+                <p>Thank you for your message! I'll get back to you soon.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Stephen Mwangi. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="GitHub">GitHub</a>
+                <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                <a href="#" aria-label="Twitter">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
